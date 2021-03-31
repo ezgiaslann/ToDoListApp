@@ -1,0 +1,67 @@
+﻿@model ToDoList1.Models.ToDo
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<style>
+
+    input[type=text] {
+        background-color: rgba(255, 255, 255, 60%);
+        color: black;
+        cursor: pointer;
+        border-radius: 20px;
+    }
+
+    input[type=password] {
+        background-color: rgba(255, 255, 255, 60%);
+        color: black;
+        cursor: pointer;
+        border-radius: 20px;
+    }
+
+    input[type=submit] {
+        background-color: burlywood;
+        color: black;
+        font: 50%;
+        cursor: pointer;
+        border-radius: 50px;
+        width: 50%;
+        margin-top: 20px;
+        font-weight: bold;
+    }
+
+        input[type=submit]:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+</style>
+<br />
+<h2>DETAİLS</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <br />
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsDone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsDone)
+        </dd>
+
+    </dl>
+</div>
+<br />
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

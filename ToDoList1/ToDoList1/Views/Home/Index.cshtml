@@ -1,0 +1,164 @@
+﻿<style>
+    * {
+        /* box-sizing: border-box; */
+    }
+
+    body {
+        /* padding: 0;
+    margin: 0; */
+        background-image: url(../../img/background.jpg);
+        /* margin:auto; */
+        background-size: cover;
+        /* background-position: center; */
+    }
+
+    html {
+        font-size: 13px;
+    }
+
+    header {
+        margin: auto;
+        /* margin-top:0%; */
+        /* border: 1px solid black; */
+        /* width: 100%;
+    height: 10rem; */
+        /* background-image: url(img/background.jpg);
+    background-size: cover;
+    background-position: center; */
+    }
+
+    #hizala {
+        border: 1px solid red;
+        width: 85%;
+        height: 60rem;
+        margin: auto;
+        margin-top: 2rem;
+    }
+
+        #hizala h1, #hizala h3 {
+            color: white;
+            text-align: center;
+        }
+
+    #headerSearch {
+        border: 1px solid #FF6345;
+        border-radius: 2px;
+        width: 80%;
+        height: 20rem;
+        margin: auto;
+        background-color: #FF6345;
+        padding: 1.5rem 2rem;
+    }
+
+    form input {
+        width: 1rem;
+        height: 2.5rem;
+        margin-bottom: 1rem;
+        text-indent: 1.5rem;
+        padding: 0 0.3rem;
+    }
+
+    .İconHeader::placeholder {
+        background-image: url(img/placeholder.png);
+        width: 16px;
+        height: 1.3rem;
+        background-repeat: no-repeat;
+        z-index: -1;
+    }
+
+
+
+
+
+    .container {
+        position: relative;
+        border-radius: 20px;
+        background-color: rgba(255, 255, 255, 0.7);
+        padding: 20px 0 30px 0;
+        width: 50%;
+        height: 30rem;
+        margin: auto;
+        margin-top: 10%;
+        font-weight: bold;
+    }
+
+
+
+
+
+
+    input[type=text] {
+        background-color: rgba(255, 255, 255, 60%);
+        color: black;
+        cursor: pointer;
+        border-radius: 20px;
+        width: 60rem;
+        margin-top: 63px;
+        margin-left: 7%;
+    }
+
+    input[type=password] {
+        background-color: rgba(255, 255, 255, 60%);
+        color: black;
+        cursor: pointer;
+        border-radius: 20px;
+        width: 85%;
+        margin-top: 10px;
+        margin-left: 7%;
+    }
+    /* style the submit button */
+    input[type=submit] {
+        background-color: burlywood;
+        color: black;
+        font: 50%;
+        cursor: pointer;
+        border-radius: 50px;
+        width: 100rem;
+        margin-top: 20px;
+        margin-left: 25%;
+    }
+
+        input[type=submit]:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+    .col {
+        float: left;
+        width: 50%;
+        margin: auto;
+        padding: 0 50px;
+        margin-top: 6px;
+    }
+
+    h2 {
+        margin-top: 6%;
+    }
+</style>
+
+
+<header>
+    <div class="container">
+        <form action="/list.html">
+            <div class="row">
+
+                <h2 id="baslik" style="text-align:center"></h2>
+
+                <input type="text" name="username" placeholder="Username" required>
+                <br />
+                <input type="password" name="password" placeholder="Password" required>
+                <input type="submit" value="Login">
+                <button onclick="document.getElementById('demo').innerHTML=Date()">The time is?</button>
+                @Html.ActionLink("Home", "Index", "Home")
+            </div>
+
+
+        </form>
+    </div>
+
+    <div class="bottom-container">
+        <div class="row">
+
+
+        </div>
+    </div>
+</header>
